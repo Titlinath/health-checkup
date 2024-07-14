@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.hero {
+    background-image: linear-gradient(to bottom, #f7f7f7, #fff);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero .btn:hover {
+    background-color: #3e8e41;
+}
+
+.stats-graph {
+    margin-top: 40px;
+}
+
+.stats-graph img {
+    width: 100%;
+    height: auto;
+}
+
+.about-us {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+}
+
+.about-us h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.about-us img {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+.features-benefits {
+    padding: 40px 0;
+}
+
+.features-benefits h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.features-benefits ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features-benefits li {
+    margin-bottom: 20px;
+}
+
+.features-benefits i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.features-benefits h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.features-benefits p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.stats {
+    margin-top: 40px;
+}
+
+.stats p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.testimonials {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+}
+
+.testimonials h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.testimonials .testimonial {
+    margin-bottom: 40px;
+}
+
+.testimonials img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.testimonials p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.health-stats {
+    padding: 40px 0;
+}
+
+.health-stats h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.health-stats .stats-graph {
+    margin-top: 40px;
+}
+
+.health-stats .stats-graph img {
+    width: 100%;
+    height: auto;
+}
+
+.health-stats p {
+    font-size: 16px;
+}
+.health-stats ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.health-stats li {
+    margin-bottom: 20px;
+}
+
+.why-choose-us {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+}
+
+.why-choose-us h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.why-choose-us .comparison {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.why-choose-us h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.why-choose-us ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.why-choose-us li {
+    margin-bottom: 20px;
+}
+
+.why-choose-us .stats {
+    margin-top: 40px;
+}
+
+.why-choose-us .stats p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F1DAAE;
+    color: #482E1D;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    background-color: #A3966A;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #4A2711;
+    margin-bottom: 10px;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.chart-container canvas {
+    width: 45%;
+    height: 300px;
+}
+
+.table-container {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #482E1D;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.challenge-details, .health-data, .challenge-preview, .leaderboard {
+    background-color: #A4918D;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #91553D;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #895D2C;
+}

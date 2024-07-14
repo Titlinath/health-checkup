@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Health Matters</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  
+    <section class="hero">
+        <div class="container">
+            <h1>Your Health Matters: Join Us for a Better Tomorrow!</h1>
+            <p>Prioritize your well-being with our health challenges, expert advice, and personalized health checkups.</p>
+            <button class="btn">Join a Challenge</button>
+            <button class="btn">Get Started</button>
+            <div class="stats-graph">
+                <canvas id="heroChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Our mission is to make health a priority in your busy life with easy-to-use challenges, expert consultations, and personalized health checkups.</p>
+            <p>Our vision is to empower individuals to take control of their health and well-being through innovative solutions and community support.</p>
+            <img src="team-photo.jpg" alt="Team Photo">
+        </div>
+    </section>
+
+    <section class="features-benefits">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Health Challenges</h3>
+                    <p>Join fun and motivating health challenges.</p>
+                </li>
+                <li>
+                    <i class="fas fa-stethoscope"></i>
+                    <h3>Expert Consultations</h3>
+                    <p>Get advice from qualified health professionals.</p>
+                </li>
+                <li>
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Personalized Checkups</h3>
+                    <p>Regular health checkups with tailored recommendations.</p>
+                </li>
+                <li>
+                    <i class="fas fa-users"></i>
+                    <h3>Community Support</h3>
+                    <p>Engage with a community of like-minded individuals.</p>
+                </li>
+            </ul>
+            <div class="stats">
+                <p>75% of patients using telemedicine platforms report high satisfaction.</p>
+                <p>64% of patients see improved health outcomes.</p>
+                <p>71% of healthcare professionals see better patient engagement through mobile apps.</p>
+                <p>64% report improved patient outcomes from mobile apps.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial">
+                <img src="user-photo.jpg" alt="User Photo">
+                <p>"I was able to lose 10 pounds in just 2 months with the help of their health challenges!"</p>
+                <p>- John Doe</p>
+            </div>
+            <div class="testimonial">
+                <img src="user-photo.jpg" alt="User Photo">
+                <p>"Their expert consultations helped me manage my diabetes and improve my overall health."</p>
+                <p>- Jane Doe</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="health-stats">
+        <div class="container">
+            <h2>Health Trends in India</h2>
+            <div class="stats-graph">
+                <canvas id="healthStatsChart"></canvas>
+            </div>
+            <p>39% of adults aged 18-29 in India had at least one NCD risk factor.</p>
+            <p>55% of adults aged 30-39 had at least one NCD risk factor.</p>
+            <p>22% of adults aged 18-25 had hypertension.</p>
+            <p>18% of adults aged 26-35 had hypertension.</p>
+            <h3>State-wise Statistics:</h3>
+            <ul>
+                <li>West Bengal: 22% of women and 25% of men aged 20-24 had hypertension.</li>
+                <li>Maharashtra: 20% of adults aged 18-24 had hypertension.</li>
+                <li>Tamil Nadu: 24% of adults aged 20-29 had hypertension.</li>
+                <li>Delhi: 26% of adults aged 20-29 had hypertension.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="comparison">
+                <h3>Successful Platforms:</h3>
+                <ul>
+                    <li>Practo</li>
+                    <li>MyFitnessPal</li>
+                    <li>Zocdoc</li>
+                </ul>
+                <h3>Challenges:</h3>
+                <ul>
+                    <li>Data privacy concerns</li>
+                    <li>Lack of transparency</li>
+                    <li>Insufficient regulation</li>
+                </ul>
+                <h3>Our Strengths:</h3>
+                <ul>
+                    <li>Emphasis on data security</li>
+                    <li>Transparent recommendations</li>
+                    <li>User-centered services</li>
+                </ul>
+            </div>
+            <div class="stats">
+                <p>55% of healthcare apps had no privacy policy.</p>
+                <p>45% of apps shared user data with third parties.</p>
+            </div>
+        </div>
+    </section>
+
+ 
+    <footer>
+        <div class="container">
+            <p>Contact us: <a href="mailto:carrental4@gmail.com">carrental4@gmail.com</a></p>
+            <div class="social-media">
+                <a href="https://www.facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="https://www.twitter.com"><img src="twitter-icon.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        
+        const ctxHero = document.getElementById('heroChart').getContext('2d');
+        const heroChart = new Chart(ctxHero, {
+            type: 'line',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+                datasets: [{
+                    label: 'Participants',
+                    data: [10, 20, 30, 40, 50, 60],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    fill: false
+                },
+                {
+                    label: 'Completed Challenges',
+                    data: [5, 15, 25, 35, 45, 55],
+                    borderColor: 'rgba(153, 102, 255, 1)',
+                    borderWidth: 2,
+                    fill: false
+                }]
+            },
+            options: {
+                scales: {
+                    x: {
+                        beginAtZero: true
+                    },
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        
+        const ctxHealthStats = document.getElementById('healthStatsChart').getContext('2d');
+        const healthStatsChart = new Chart(ctxHealthStats, {
+            type: 'line',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+                datasets: [{
+                    label: 'Hypertension Cases',
+                    data: [5, 15, 25, 35, 45, 55],
+                    borderColor: 'rgba(153, 102, 255, 1)',
+                    borderWidth: 2,
+                    fill: false
+                },
+                {
+                    label: 'NCD Risk Factor Cases',
+                    data: [7, 17, 27, 37, 47, 57],
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 2,
+                    fill: false
+                }]
+            },
+            options: {
+                scales: {
+                    x: {
+                        beginAtZero: true
+                    },
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
