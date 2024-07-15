@@ -1,79 +1,109 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #F1DAAE;
-    color: #482E1D;
     margin: 0;
     padding: 0;
+    background-color: #eef2f7;
 }
 
-.dashboard {
+.container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px auto;
     padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(10, 110, 211, 0.3);
 }
 
-header {
-    text-align: center;
+.search-bar {
     margin-bottom: 20px;
 }
 
-section {
-    background-color: #A3966A;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
+.search-bar input[type="search"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f0f4f8;
+    box-shadow: 0 2px 4px rgba(10, 110, 211, 0.1);
+    color: #000; 
 }
 
-section h2 {
-    color: #4A2711;
-    margin-bottom: 10px;
+.calendar-section {
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(10, 110, 211, 0.2);
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.calendar-section input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #e6ebf1;
+    box-shadow: 0 2px 4px rgba(10, 110, 211, 0.1);
+    color: #000; 
+}
+
+.calendar-section #calendar-display {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #000; 
+}
+
+.charts-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .chart-container {
-    display: flex;
-    justify-content: space-around;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(10, 110, 211, 0.2);
     margin-bottom: 20px;
-}
-
-.chart-container canvas {
     width: 45%;
-    height: 300px;
+    border-radius: 10px;
 }
 
-.table-container {
-    margin-top: 20px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-table, th, td {
-    border: 1px solid #482E1D;
-}
-
-th, td {
+.chart-note {
+    background-color: #e6ebf1;
     padding: 10px;
-    text-align: center;
-}
-
-.challenge-details, .health-data, .challenge-preview, .leaderboard {
-    background-color: #A4918D;
-    padding: 15px;
-    border-radius: 8px;
-}
-
-button {
-    background-color: #91553D;
-    color: #FFFFFF;
-    border: none;
-    padding: 10px 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(10, 110, 211, 0.1);
+    margin-top: 20px;
     border-radius: 5px;
-    cursor: pointer;
+    color: #000; 
 }
 
-button:hover {
-    background-color: #895D2C;
+.user-profile {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(10, 110, 211, 0.2);
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.user-profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 2px 4px rgba(10, 110, 211, 0.1);
+}
+
+.user-profile h2 {
+    margin: 20px 0 10px;
+    color: #000; 
+}
+
+.user-profile p {
+    font-size: 18px;
+    color: #000; 
+}
+
+h2, h3 {
+    color: #000; 
 }

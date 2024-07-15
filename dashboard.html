@@ -3,107 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health Care Dashboard</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="styles1.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="dashboard">
-        <header>
-            <h1>Health Care Dashboard</h1>
-        </header>
-        <section id="overview">
-            <h2>Overview</h2>
+    <div class="container">
+        <div class="search-bar">
+            <input type="search" placeholder="Search...">
+        </div>
+        <div class="calendar-section">
+            <h2>Calendar</h2>
+            <input type="date" id="calendar-input" value="2021-03-24">
+            <div id="calendar-display"></div>
+        </div>
+        <div class="charts-section">
             <div class="chart-container">
-                <canvas id="maleHealthChart"></canvas>
-                <canvas id="femaleHealthChart"></canvas>
+                <canvas id="chart-1"></canvas>
+                <div class="chart-note">
+                    <h3>Note:</h3>
+                    <p>The statistics are based on different surveys and studies, so the exact percentages may not be directly comparable. However, they provide a general idea of the trend.</p>
+                </div>
             </div>
-            <div class="table-container">
-                <h3>Males</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Age</th>
-                            <th>Height (cm)</th>
-                            <th>Weight (kg)</th>
-                            <th>BP (mmHg)</th>
-                            <th>FBS (mg/dL)</th>
-                            <th>Hb (g/dL)</th>
-                            <th>Cholesterol (mg/dL)</th>
-                            <th>BMI</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>18-24</td><td>169-176</td><td>54-61</td><td>110-120/70-80</td><td>70-90</td><td>14-18</td><td>120-200</td><td>18.5-24.9</td></tr>
-                        <tr><td>25-34</td><td>170-177</td><td>56-64</td><td>115-125/75-85</td><td>75-95</td><td>14.5-18.5</td><td>125-210</td><td>18.5-24.9</td></tr>
-                        <tr><td>35-44</td><td>169-175</td><td>58-66</td><td>120-130/80-90</td><td>80-100</td><td>15-19</td><td>130-220</td><td>18.5-24.9</td></tr>
-                        <tr><td>45-54</td><td>168-173</td><td>60-68</td><td>125-135/85-95</td><td>85-105</td><td>15.5-19.5</td><td>135-230</td><td>18.5-24.9</td></tr>
-                        <tr><td>55-64</td><td>165-170</td><td>62-70</td><td>130-140/90-100</td><td>90-110</td><td>16-20</td><td>140-240</td><td>18.5-24.9</td></tr>
-                    </tbody>
-                </table>
-                <h3>Females</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Age</th>
-                            <th>Height (cm)</th>
-                            <th>Weight (kg)</th>
-                            <th>BP (mmHg)</th>
-                            <th>FBS (mg/dL)</th>
-                            <th>Hb (g/dL)</th>
-                            <th>Cholesterol (mg/dL)</th>
-                            <th>BMI</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>18-24</td><td>158-164</td><td>45-52</td><td>105-115/65-75</td><td>70-90</td><td>13-16</td><td>120-200</td><td>18.5-24.9</td></tr>
-                        <tr><td>25-34</td><td>159-165</td><td>47-55</td><td>110-120/70-80</td><td>75-95</td><td>13.5-17</td><td>125-210</td><td>18.5-24.9</td></tr>
-                        <tr><td>35-44</td><td>158-163</td><td>49-58</td><td>115-125/75-85</td><td>80-100</td><td>14-18</td><td>130-220</td><td>18.5-24.9</td></tr>
-                        <tr><td>45-54</td><td>156-161</td><td>51-62</td><td>120-130/80-90</td><td>85-105</td><td>14.5-18.5</td><td>135-230</td><td>18.5-24.9</td></tr>
-                        <tr><td>55-64</td><td>154-159</td><td>53-65</td><td>125-135/85-95</td><td>90-110</td><td>15-19</td><td>140-240</td><td>18.5-24.9</td></tr>
-                    </tbody>
-                </table>
+            <div class="chart-container">
+                <canvas id="chart-2"></canvas>
+                <div class="chart-note">
+                    <h3>Note:</h3>
+                    <p>The statistics may vary depending on the source, methodology, and year of the study. However, they indicate a concerning trend of increasing NCDs among younger adults in India.</p>
+                </div>
             </div>
-        </section>
-        <section id="current-challenge">
-            <h2>Current Challenge</h2>
-            <div class="challenge-details">
-                <p>Join our weekly challenge to improve your health! Follow the instructions and track your progress.</p>
-                <button id="joinChallengeBtn">Join Challenge</button>
+            <div class="chart-container">
+                <canvas id="chart-3"></canvas>
+                <div class="chart-note">
+                    <h3>Note:</h3>
+                    <p>Gender-wise health statistics based on various age groups and health parameters.</p>
+                </div>
             </div>
-        </section>
-        <section id="personal-health-data">
-            <h2>Personal Health Data</h2>
-            <div class="health-data">
-                <p>Gender: Female</p>
-                <p>Hight: 156 cm</p>
-                <p>Weight: 70 kg</p>
-                <p>Age: 51</p>
-                <p>Blood Pressure: 120/80 mmHg</p>
-                <p>Blood Sugar: 90 mg/dL</p>
-                <p>Cholesterol: 200 mg/dL</p>
-                <p>Hemoglobin: 16.5 g/dL</p>
-            </div>
-        </section>
-        <section id="upcoming-challenges">
-            <h2>Upcoming Challenges</h2>
-            <div class="challenge-preview">
-                <p>Get ready for our upcoming challenges! Sign up in advance to stay motivated.</p>
-                <button id="signUpBtn">Sign Up</button>
-            </div>
-        </section>
-        <section id="community-highlights">
-            <h2>Community Highlights</h2>
-            <div class="leaderboard">
-                <p>Top Performers</p>
-                <ul>
-                    <li>User 1: 100 points</li>
-                    <li>User 2: 90 points</li>
-                    <!-- Add more users as needed -->
-                </ul>
-            </div>
-        </section>
-    </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
