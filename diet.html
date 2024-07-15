@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Page</title>
+    <style>
+        
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #00072D;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1, h2, h3 {
+            color: #051650;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        
+
+        section:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+
+        
+
+        .chart-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #0A2472;
+            color: #fff;
+        }
+
+       
+
+        #learn-more {
+            background-color: #123499;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #learn-more:hover {
+            background-color: #1A43BF;
+        }
+
+        
+
+        #more-content {
+            display: none;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Diet Charts</h1>
+    <p>Get started on your fitness journey with our personalized diet charts, tailored to your specific needs and goals.</p>
+</header>
+    <main>
+        <section id="intro">
+            <h2>Introduction</h2>
+            <p>Brief overview of the importance of diet and nutrition</p>
+        </section>
+        <section id="weight-loss-diet">
+            <h2>Weight Loss Diet Chart</h2>
+            <div class="chart-container">
+                <table>
+                    <tr>
+                        <th>Meal</th>
+                        <th>Food</th>
+                        <th>Calories</th>
+                    </tr>
+                    <tr>
+                        <td>Breakfast</td>
+                        <td>Oatmeal with fruits and nuts</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>Snack</td>
+                        <td>Carrot sticks with hummus</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>Lunch</td>
+                        <td>Grilled chicken with brown rice and vegetables</td>
+                        <td>400</td>
+                    </tr>
+                    <tr>
+                        <td>Snack</td>
+                        <td>Greek yogurt with berries</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>Dinner</td>
+                        <td>Grilled salmon with quinoa and mixed vegetables</td>
+                        <td>500</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="bodybuilding-diet">
+            <h2>Bodybuilding Diet Chart</h2>
+            <div class="chart-container">
+                <table>
+                    <tr>
+                        <th>Meal</th>
+                        <th>Food</th>
+                                            <th>Calories</th>
+                    </tr>
+                    <tr>
+                        <td>Breakfast</td>
+                        <td>Egg whites with whole wheat toast</td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <td>Snack</td>
+                        <td>Egg whites with whole wheat toast</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>Lunch</td>
+                        <td>Grilled chicken with brown rice and mixed vegetables</td>
+                        <td>600</td>
+                    </tr>
+                    <tr>
+                        <td>Snack</td>
+                        <td>Greek yogurt with protein powder and berries</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>Dinner</td>
+                        <td>Grilled steak with sweet potato and broccoli</td>
+                        <td>700</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="vegan-diet">
+            <h2>Vegan Diet Chart</h2>
+            <div class="chart-container">
+                <table>
+                    <tr>
+                        <th>Meal</th>
+                        <th>Food</th>
+                        <th>Calories</th>
+                    </tr>
+                    <tr>
+                        <td>Breakfast</td>
+                        <td>Oatmeal with almond milk and fruits</td>
+                        <td>350</td>
+                    </tr>
+                    <tr>
+                        <td>Snack</td>
+                        <td>Carrot sticks with hummus</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>Lunch</td>
+                        <td>Lentil soup with whole wheat bread</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>Snack</td>
+                        <td>Apple slices with almond butter</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>Dinner</td>
+                        <td>Quinoa and black bean bowl with roasted vegetables</td>
+                        <td>600</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="diabetic-diet">
+            <h2>Diabetic Diet Chart</h2>
+            <div class="chart-container">
+                <table>
+                    <tr>
+                        <th>Meal</th>
+                        <th>Food</th>
+                        <th>Calories</th>
+                    </tr>
+                    <tr>
+                        <td>Breakfast</td>
+                        <td>Oatmeal with fruits and nuts</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>Snack</td>
+                        <td>Greek yogurt with berries</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>Lunch</td>
+                        <td>Grilled chicken with brown rice and mixed vegetables</td>
+                        <td>400</td>
+                    </tr>
+                    <tr>
+                        <td>Snack</td>
+                        <td>Carrot sticks with hummus</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>Dinner</td>
+                        <td>Grilled salmon with quinoa and mixed vegetables</td>
+                        <td>500</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="gluten-free-diet">
+            <h2>Gluten-Free Diet Chart</h2>
+            <div class="chart-container">
+                <table>
+                    <tr>
+                        <th>Meal</th>
+                        <th>Food</th>
+                        <th>Calories</th>
+                    </tr>
+                    <tr>
+                        <td>Breakfast</td>
+                        <td>Gluten-free oatmeal with almond milk and fruits</td>
+                        <td>350</td>
+                    </tr>
+                    <tr>
+                        <td>Snack</td>
+                        <td>Carrot sticks with hummus</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>Lunch</td>
+                        <td>Grilled chicken with gluten-free bread and mixed vegetables</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>Snack</td>
+                        <td>Apple slices with almond butter</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>Dinner</td>
+                      <td>Grilled salmon with quinoa and mixed</td>
+                      <td>300</td>                         </tr>
+                </table>
+            </div>
+        </section>
+        <button id="learn-more">Learn More</button>
+        <div id="more-content">
+            <h2>Additional Tips and Resources</h2>
+            <p>Here are some additional tips and resources to help you achieve your diet goals:</p>
+            <ul>
+                <li>Drink plenty of water throughout the day</li>
+                <li>Aim for 5-7 servings of fruits and vegetables daily</li>
+                <li>Incorporate physical activity into your daily routine</li>
+                <li>Consult with a healthcare professional or registered dietitian for personalized advice</li>
+            </ul>
+            <p>For more information and resources, visit our website or social media channels:</p>
+            <ul>
+                <li><a href="#">Website</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </main>
+    <script>
+        const learnMoreButton = document.getElementById('learn-more');
+        const moreContent = document.getElementById('more-content');
+
+        learnMoreButton.addEventListener('click', () => {
+            moreContent.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
